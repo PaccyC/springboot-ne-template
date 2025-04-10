@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: ne_template
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/springboot_template_db
+    username: pacifique
+    password: myPassword123
+
+
+
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+
+
+server:
+  port: 8844
+
