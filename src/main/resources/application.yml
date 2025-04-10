@@ -22,8 +22,15 @@ spring:
 
 
 jwt:
-  secretKey: bbb2JvLuOKbhGcbf3iw3RP3Y1leWUouWU6mxAMZk0hmQ=wiwwjewj3e82u812q281wdpqu23usg
+  secretKey: "bbb2JvLuOKbhGcbf3iw3RP3Y1leWUouWU6mxAMZk0hmQwiwwjewj3e82u812q281wdpqu23usg"
 
 server:
   port: 8844
 
+
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui
+  api-docs:
+    path: /api-docs

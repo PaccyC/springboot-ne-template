@@ -21,8 +21,8 @@ public class JwtService {
 
     private static final Logger log = LoggerFactory.getLogger(JwtService.class);
 
-    @Value("jwt.secretKey")
-    private  String SECRET_KEY;
+//    @Value("jwt.secretKey")
+    private  String SECRET_KEY= "bbb2JvLuOKbhGcbf3iw3RP3Y1leWUouWU6mxAMZk0hmQwiwwjewj3e82u812q281wdpqu23usg";
 
     private final Set<String> invalidatedTokens = new HashSet<>();
     private boolean isTokenExpired(String token) {

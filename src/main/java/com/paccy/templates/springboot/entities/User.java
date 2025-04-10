@@ -6,6 +6,7 @@ import com.paccy.templates.springboot.enums.ERole;
 import com.paccy.templates.springboot.enums.EUserStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.OnDelete;
@@ -26,6 +27,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "app_users")
+@Builder
 public class User implements  UserDetails{
 
     @Id
