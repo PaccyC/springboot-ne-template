@@ -21,6 +21,9 @@ spring:
       enabled: true
 
 
+jwt:
+  secretKey: bbb2JvLuOKbhGcbf3iw3RP3Y1leWUouWU6mxAMZk0hmQ=wiwwjewj3e82u812q281wdpqu23usg
+
 server:
   port: 8844
 
