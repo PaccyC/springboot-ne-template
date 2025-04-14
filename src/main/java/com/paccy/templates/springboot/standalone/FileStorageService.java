@@ -33,9 +33,10 @@ import java.util.stream.Stream;
 
 
         @Bean
-        public void init() {
+        public Path init() {
             try {
-                Files.createDirectories(Paths.get(root, userProfilesFolder, docsFolder));
+            return Files.createDirectories(Paths.get(root, userProfilesFolder, docsFolder));
+
             } catch (IOException e) {
                 throw new AppException(e.getMessage());
             }

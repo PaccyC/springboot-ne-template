@@ -2,6 +2,12 @@ spring:
   application:
     name: ne_template
 
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 500MB
+      max-request-size: 500MB
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -21,11 +27,19 @@ spring:
       enabled: true
 
 
+
+
+
+
 jwt:
   secretKey: "bbb2JvLuOKbhGcbf3iw3RP3Y1leWUouWU6mxAMZk0hmQwiwwjewj3e82u812q281wdpqu23usg"
 
 server:
   port: 8844
+
+uploads:
+  extensions: pdf,png,jpeg,jpg
+  directory: { user_profiles: /opt/ne-springboot/uploads/user_profiles, docs: /opt/ne-springboot/uploads/docs }
 
 
 
