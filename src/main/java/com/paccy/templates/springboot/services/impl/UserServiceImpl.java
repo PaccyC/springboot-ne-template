@@ -32,7 +32,8 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public User register(RegisterRequest registerRequest) {
-        Optional<User> existingUser= userRepository.findByEmail(registerRequest.email());
+      Optional<User> existingUser= userRepository.findByEmail(registerRequest.email());
+
         if (existingUser.isPresent()){
             throw new BadRequestException( String.format("User with email % already exists", registerRequest.email()));
         }

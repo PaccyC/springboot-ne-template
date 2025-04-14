@@ -1,11 +1,15 @@
 package com.paccy.templates.springboot.services;
 
 import com.paccy.templates.springboot.helpers.ApiResponse;
-import com.paccy.templates.springboot.request.LoginRequest;
-import com.paccy.templates.springboot.request.RegisterRequest;
+import com.paccy.templates.springboot.request.*;
 import com.paccy.templates.springboot.response.AuthResponse;
 
 public interface IAuthService {
 
-    public AuthResponse login(LoginRequest loginRequest);
+    AuthResponse login(LoginRequest loginRequest);
+    void  initiateAccountVerification(InitiateAccountVerificationRequest verificationRequest);
+    void verifyAccount(String verificationCode);
+    void initiatePasswordReset(InitiatePasswordResetRequest passwordResetRequest);
+    void resetPassword(String email,String verificationCode,String newPassword);
+
 }

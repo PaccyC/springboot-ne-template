@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 public class OpenApiConfig {
 
     @Bean
-    public OpenAPI customerServiceOpenApi(){
+    public OpenAPI templateOpenApi(){
 
         return new OpenAPI()
                 .info( new Info()
