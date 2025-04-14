@@ -31,12 +31,6 @@ public class FileServiceImpl implements IFileService {
     @Value("${uploads.extensions}")
     private String extensions;
 
-    @Autowired
-    public FileServiceImpl(FileRepository fileRepository, FileStorageService fileStorageService) {
-        this.fileRepository = fileRepository;
-        this.fileStorageService = fileStorageService;
-    }
-
     @Override
     public File getById(UUID id) {
         return this.fileRepository.findById(id).orElseThrow(
