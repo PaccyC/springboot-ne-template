@@ -43,7 +43,7 @@ public class AuthController {
 
 
     @PutMapping("/reset-password")
-    public ResponseEntity<ApiResponse<Object>> verifyAccount(
+    public ResponseEntity<ApiResponse<Object>> resetPassword(
             @RequestBody @Valid ResetPasswordRequest request
     ){
         authService.resetPassword(request.getEmail(),request.getVerificationCode(),request.getNewPassword());

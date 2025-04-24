@@ -22,25 +22,25 @@ import java.util.stream.Stream;
     public class FileStorageService {
 
 
-        @Value("${uploads.directory}")
+//        @Value("${uploads.directory}")
         private String root;
 
-        @Value("${uploads.directory.user_profiles}")
+//        @Value("${uploads.directory.user_profiles}")
         private String userProfilesFolder;
 
-        @Value("${uploads.directory.docs}")
+//        @Value("${uploads.directory.docs}")
         private String docsFolder;
 
 
-        @Bean
-        public Path init() {
-            try {
-            return Files.createDirectories(Paths.get(root, userProfilesFolder, docsFolder));
-
-            } catch (IOException e) {
-                throw new AppException(e.getMessage());
-            }
-        }
+//        @Bean
+//        public Path init() {
+//            try {
+//            return Files.createDirectories(Paths.get(root, userProfilesFolder, docsFolder));
+//
+//            } catch (IOException e) {
+//                throw new AppException(e.getMessage());
+//            }
+//        }
 
         public String save(MultipartFile file, String directory, String filename) {
             try {

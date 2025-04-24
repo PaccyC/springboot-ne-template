@@ -26,13 +26,11 @@ spring:
     livereload:
       enabled: true
 
-
-
-
-
-
 jwt:
-  secretKey: "bbb2JvLuOKbhGcbf3iw3RP3Y1leWUouWU6mxAMZk0hmQwiwwjewj3e82u812q281wdpqu23usg"
+  secretKey: "${JWT_SECRET_KEY}"
+
+
+
 
 server:
   port: 8844

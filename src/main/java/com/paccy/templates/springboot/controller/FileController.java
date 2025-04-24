@@ -21,7 +21,7 @@ public class FileController {
     private final FileStorageService fileStorageService;
     private final FileServiceImpl fileService;
 
-    @Value("${uploads.directory.user_profiles}")
+//    @Value("${uploads.directory.user_profiles}")
     private String directory;
 
     @GetMapping("/load-file/{filename:.+}")

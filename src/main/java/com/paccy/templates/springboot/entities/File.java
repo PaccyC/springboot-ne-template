@@ -48,9 +48,5 @@ public class File extends AuditsInitiator {
     @Enumerated(EnumType.STRING)
     private EFileStatus status;
 
-    public String getUrl() {
-        return "http://localhost:8087/api/v1/files/load-file" + "/" + this.getName();
-
-    }
 }
 

@@ -123,6 +123,7 @@ public class AuthServiceImpl implements IAuthService {
         mailService.sendResetPasswordMail(user.getEmail(), user.getFullName(), user.getActivationCode());
     }
 
+
     @Override
     public void resetPassword(String email,String verificationCode,String newPassword) {
       User user= this.userRepository.findByEmail(email).orElseThrow(
